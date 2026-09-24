@@ -56,7 +56,7 @@ t_iso, _ = text('ISO', 800, 120, X(bx), Y(by - 10), 'middle')
 t_std, _ = text('9001:2015', 700, 50, X(bx), Y(by + 75), 'middle')
 t_cer, _ = text('CERTIFIED', 600, 30, X(bx), Y(by + 140), 'middle', tracking=0.2)
 art.append(f'<rect id="Divider" x="{X(sep_x) - 4:.1f}" y="{Y(mark_top):.1f}" width="8" height="{mark_h:.1f}" fill="{NAVY}"/>')
-art.append('<g id="ISO_Badge_REPLACE_WITH_OFFICIAL_MARK">'
+art.append('<g id="ISO_9001_2015_Badge">'
            f'<circle cx="{X(bx)}" cy="{Y(by):.1f}" r="{badge_r}" fill="#ffffff" stroke="{NAVY}" stroke-width="22"/>'
            f'<circle cx="{X(bx)}" cy="{Y(by):.1f}" r="{badge_r - 45}" fill="none" stroke="{NAVY}" stroke-width="6"/>'
            f'<path fill="{NAVY}" d="{t_iso}"/><path fill="{NAVY}" d="{t_std}"/><path fill="{NAVY}" d="{t_cer}"/></g>')

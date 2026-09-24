@@ -20,11 +20,15 @@ so no fonts are needed. Files open in CorelDRAW (File → Import the `.svg`, or 
 - Colours (RGB → specify CMYK/Pantone with the printer): Navy `#0143A3`, Cyan `#05A5FD`, Deep navy `#012D74`.
 - Font used (outlined): Montserrat (SIL Open Font License). Icons: Font Awesome 4.7 (SIL OFL).
 
-## Before sending to print, please confirm
+## Confirmed details
 
-1. **Phone number:** +92 51 6109291 is used (as in your designs). The website lists +92 51 8747430.
-   To change it: `python source/nameplate.py "+92 51 8747430"` and `python source/door.py "+92 51 8747430"`.
-2. **ISO badge:** the group `ISO_Badge_REPLACE_WITH_OFFICIAL_MARK` is a simple text badge. Replace it with
-   the official mark from your certification body if you have it.
-3. **Logo:** the logo mark was traced to vector from your artwork. If you have the original logo file,
-   swap it in for the best possible match.
+- **Phone number:** +92 51 6109291 (confirmed).
+- **ISO badge:** True Tech Solutions is ISO 9001:2015 certified. The badge (group `ISO_9001_2015_Badge`) is a plain
+  text badge, "ISO 9001:2015 CERTIFIED". It deliberately does not copy the ISO organisation's logo or a
+  certification body's mark, since those may only be used with permission.
+
+## Still to check before printing
+
+- **Handle position:** measure the real door and adjust the keep-out zone if it differs from the mock-up.
+- **Logo:** the logo mark was traced to vector from your artwork. If you have the original logo file,
+  swap it in for the best possible match.
