@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Company footer applied to every page of the website -->
+    <template id="tt_footer" inherit_id="website.layout" name="TrueTech Footer">
+        <xpath expr="//div[@id='footer']" position="replace">
+            <div id="footer" class="tt-footer" t-ignore="true" t-if="not no_footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4 mb-4">
+                            <h5>True Tech Solutions</h5>
+                            <p>
+                                ISO 9001:2015 certified system integration company delivering
+                                software development, IT infrastructure, security and managed services.
+                            </p>
+                        </div>
+                        <div class="col-6 col-lg-2 mb-4">
+                            <h5>Company</h5>
+                            <ul class="list-unstyled">
+                                <li><a href="/about">About Us</a></li>
+                                <li><a href="/services">Services</a></li>
+                                <li><a href="/solutions">Solutions</a></li>
+                                <li><a href="/contact">Contact</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-6 col-lg-3 mb-4">
+                            <h5>Solutions</h5>
+                            <ul class="list-unstyled">
+                                <li><a href="/solutions#iot">IoT &amp; RFID</a></li>
+                                <li><a href="/solutions#retail">Retail Management</a></li>
+                                <li><a href="/solutions#security">Integrated Security</a></li>
+                                <li><a href="/services#managed-services">Managed Services</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-3 mb-4">
+                            <h5>Get in Touch</h5>
+                            <ul class="list-unstyled">
+                                <li><i class="fa fa-map-marker me-2"/>Ahmed Centre, I-8 Markaz, Islamabad</li>
+                                <li><i class="fa fa-phone me-2"/><a href="tel:+92518747430">+92 51 8747430</a></li>
+                                <li><i class="fa fa-envelope me-2"/><a href="mailto:info@truetech-sol.com">info@truetech-sol.com</a></li>
+                                <li><i class="fa fa-clock-o me-2"/>Mon – Fri: 9AM – 6PM</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </xpath>
+    </template>
+</odoo>

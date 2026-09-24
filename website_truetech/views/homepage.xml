@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="homepage" inherit_id="website.homepage" name="TrueTech Homepage">
+        <xpath expr="//div[@id='wrap']" position="replace">
+            <div id="wrap" class="tt-page">
+
+                <!-- Hero -->
+                <section class="tt-hero">
+                    <div class="container">
+                        <div class="row align-items-center">
+                            <div class="col-lg-7">
+                                <span class="tt-badge">ISO 9001:2015 Certified</span>
+                                <h1>IT Solutions &amp; System Integration</h1>
+                                <p class="lead">
+                                    End-to-end intelligent business solutions backed by a 30+ year
+                                    track record in software development, system integration and
+                                    IT services.
+                                </p>
+                                <a href="/services" class="btn btn-primary btn-lg me-2 mb-2">Our Services</a>
+                                <a href="/contact" class="btn btn-outline-light btn-lg mb-2">Contact Us</a>
+                            </div>
+                            <div class="col-lg-5 d-none d-lg-block text-center">
+                                <i class="fa fa-server tt-hero-icon"/>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Stats -->
+                <section class="tt-stats">
+                    <div class="container">
+                        <div class="row text-center">
+                            <div class="col-6 col-md-3"><strong>30+</strong><span>Years of Experience</span></div>
+                            <div class="col-6 col-md-3"><strong>ISO</strong><span>9001:2015 Certified</span></div>
+                            <div class="col-6 col-md-3"><strong>24/7</strong><span>Helpdesk Support</span></div>
+                            <div class="col-6 col-md-3"><strong>3</strong><span>Regions: Pakistan, Middle East, Europe</span></div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- About teaser -->
+                <section class="tt-section">
+                    <div class="container">
+                        <div class="row align-items-center">
+                            <div class="col-lg-6 mb-4 mb-lg-0">
+                                <h6 class="tt-eyebrow">Who We Are</h6>
+                                <h2>A growing system integration IT company</h2>
+                                <p>
+                                    True Tech Solutions is an ISO 9001:2015 certified system integration
+                                    company delivering software development, IT infrastructure, security
+                                    and managed services. We enable customers to improve their IT
+                                    infrastructure, increase efficiency and focus on their strategic
+                                    objectives: developing new revenue streams, gaining and maintaining
+                                    market share, and building competitive advantage.
+                                </p>
+                                <a href="/about" class="btn btn-primary">About Us</a>
+                            </div>
+                            <div class="col-lg-6">
+                                <ul class="tt-checklist">
+                                    <li>Experienced team of certified professionals</li>
+                                    <li>Regional presence in Pakistan, global reach via Middle East and Europe offices</li>
+                                    <li>Reliable, end-to-end project delivery</li>
+                                    <li>Round-the-clock remote and telephone support</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Services -->
+                <section class="tt-section tt-alt">
+                    <div class="container">
+                        <div class="text-center mb-5">
+                            <h6 class="tt-eyebrow">What We Do</h6>
+                            <h2>Our Services</h2>
+                        </div>
+                        <div class="row">
+                            <t t-call="website_truetech.tt_service_card">
+                                <t t-set="icon" t-value="'headphones'"/>
+                                <t t-set="heading" t-value="'IT Technical Support'"/>
+                                <t t-set="text" t-value="'24/7 helpdesk team offering remote and telephone technical assistance for all your IT issues.'"/>
+                                <t t-set="link" t-value="'/services#it-support'"/>
+                            </t>
+                            <t t-call="website_truetech.tt_service_card">
+                                <t t-set="icon" t-value="'cogs'"/>
+                                <t t-set="heading" t-value="'IT Managed Services'"/>
+                                <t t-set="text" t-value="'We take over full-time operation of your IT or augment your existing staff as an extension of your organization.'"/>
+                                <t t-set="link" t-value="'/services#managed-services'"/>
+                            </t>
+                            <t t-call="website_truetech.tt_service_card">
+                                <t t-set="icon" t-value="'lightbulb-o'"/>
+                                <t t-set="heading" t-value="'IT Consultancy'"/>
+                                <t t-set="text" t-value="'Expert advice to plan, modernise and align your technology with business goals.'"/>
+                                <t t-set="link" t-value="'/services#consultancy'"/>
+                            </t>
+                            <t t-call="website_truetech.tt_service_card">
+                                <t t-set="icon" t-value="'sitemap'"/>
+                                <t t-set="heading" t-value="'Turnkey IT Infrastructure'"/>
+                                <t t-set="text" t-value="'Design and delivery of networks, data cabling, connectivity, data centres and cloud services.'"/>
+                                <t t-set="link" t-value="'/services#infrastructure'"/>
+                            </t>
+                            <t t-call="website_truetech.tt_service_card">
+                                <t t-set="icon" t-value="'code'"/>
+                                <t t-set="heading" t-value="'Software Development'"/>
+                                <t t-set="text" t-value="'Custom business applications and ERP implementation tailored to your processes.'"/>
+                                <t t-set="link" t-value="'/services#software'"/>
+                            </t>
+                            <t t-call="website_truetech.tt_service_card">
+                                <t t-set="icon" t-value="'phone'"/>
+                                <t t-set="heading" t-value="'Telecom Solutions'"/>
+                                <t t-set="text" t-value="'Enterprise voice and communication systems that keep your teams connected.'"/>
+                                <t t-set="link" t-value="'/services#telecom'"/>
+                            </t>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Solutions -->
+                <section class="tt-section">
+                    <div class="container">
+                        <div class="text-center mb-5">
+                            <h6 class="tt-eyebrow">Industry Solutions</h6>
+                            <h2>Intelligent Business Solutions</h2>
+                        </div>
+                        <div class="row">
+                            <t t-call="website_truetech.tt_service_card">
+                                <t t-set="icon" t-value="'wifi'"/>
+                                <t t-set="heading" t-value="'IoT &amp; RFID Solutions'"/>
+                                <t t-set="text" t-value="'Built on the Impinj platform to connect items to applications, improve efficiency, increase sales and delight customers.'"/>
+                                <t t-set="link" t-value="'/solutions#iot'"/>
+                            </t>
+                            <t t-call="website_truetech.tt_service_card">
+                                <t t-set="icon" t-value="'shopping-cart'"/>
+                                <t t-set="heading" t-value="'Retail Management'"/>
+                                <t t-set="text" t-value="'Retail, inventory management and loss prevention solutions for modern stores.'"/>
+                                <t t-set="link" t-value="'/solutions#retail'"/>
+                            </t>
+                            <t t-call="website_truetech.tt_service_card">
+                                <t t-set="icon" t-value="'shield'"/>
+                                <t t-set="heading" t-value="'Integrated Security'"/>
+                                <t t-set="text" t-value="'Surveillance, access control and data degaussing and shredding solutions that protect people and information.'"/>
+                                <t t-set="link" t-value="'/solutions#security'"/>
+                            </t>
+                        </div>
+                    </div>
+                </section>
+
+                <t t-call="website_truetech.tt_cta"/>
+            </div>
+        </xpath>
+    </template>
+</odoo>

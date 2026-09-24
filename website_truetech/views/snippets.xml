@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Reusable blocks shared by several pages -->
+
+    <template id="tt_page_banner" name="TrueTech Page Banner">
+        <section class="tt-banner">
+            <div class="container">
+                <h1 t-out="title"/>
+                <p class="lead mb-0" t-if="subtitle" t-out="subtitle"/>
+            </div>
+        </section>
+    </template>
+
+    <template id="tt_cta" name="TrueTech Call To Action">
+        <section class="tt-cta">
+            <div class="container d-lg-flex align-items-center justify-content-between">
+                <div class="mb-3 mb-lg-0">
+                    <h2 class="mb-1">Ready to transform your IT?</h2>
+                    <p class="mb-0">Talk to our certified specialists about a solution built around your business.</p>
+                </div>
+                <a href="/contact" class="btn btn-light btn-lg">Get in Touch</a>
+            </div>
+        </section>
+    </template>
+
+    <template id="tt_service_card" name="TrueTech Service Card">
+        <div class="col-md-6 col-lg-4 mb-4">
+            <div class="tt-card h-100">
+                <div class="tt-icon"><i t-attf-class="fa fa-{{ icon }}"/></div>
+                <h4 t-out="heading"/>
+                <p t-out="text"/>
+                <a t-if="link" t-att-href="link" class="tt-more">Learn more <i class="fa fa-angle-right"/></a>
+            </div>
+        </div>
+    </template>
+</odoo>

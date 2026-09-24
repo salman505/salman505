@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- ============================ ABOUT ============================ -->
+    <template id="page_about_view" name="About True Tech Solutions">
+        <t t-call="website.layout">
+            <div id="wrap" class="tt-page">
+                <t t-call="website_truetech.tt_page_banner">
+                    <t t-set="title" t-value="'About True Tech Solutions'"/>
+                    <t t-set="subtitle" t-value="'Certified professionals delivering reliable IT and system integration solutions.'"/>
+                </t>
+                <section class="tt-section">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-7 mb-4">
+                                <h2>Our Company</h2>
+                                <p>
+                                    True Tech Solutions is an ISO 9001:2015 certified and growing system
+                                    integration IT company offering end-to-end intelligent business
+                                    solutions to its customers. Our team brings a 30+ year track record
+                                    in software development, system integration and IT solutions across
+                                    industries.
+                                </p>
+                                <p>
+                                    We enable customers to improve their IT infrastructure, increase
+                                    efficiency and focus on their strategic objectives, such as developing
+                                    new revenue streams, gaining and maintaining market share and building
+                                    competitive advantage.
+                                </p>
+                                <p>
+                                    With a regional presence across Pakistan and a global presence through
+                                    our Middle East and Europe offices, we serve clients wherever they operate.
+                                </p>
+                            </div>
+                            <div class="col-lg-5">
+                                <div class="tt-card">
+                                    <h4>Why choose us</h4>
+                                    <ul class="tt-checklist mb-0">
+                                        <li>ISO 9001:2015 certified quality management</li>
+                                        <li>30+ years of combined industry experience</li>
+                                        <li>Certified engineers and specialists</li>
+                                        <li>24/7 helpdesk support</li>
+                                        <li>Trusted technology partners, including Impinj</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="tt-section tt-alt">
+                    <div class="container">
+                        <div class="row text-center">
+                            <div class="col-md-4 mb-4">
+                                <div class="tt-card h-100">
+                                    <div class="tt-icon"><i class="fa fa-bullseye"/></div>
+                                    <h4>Mission</h4>
+                                    <p>Deliver dependable technology that lets our customers focus on growing their business.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="tt-card h-100">
+                                    <div class="tt-icon"><i class="fa fa-eye"/></div>
+                                    <h4>Vision</h4>
+                                    <p>Be the most trusted system integration partner across our regions.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="tt-card h-100">
+                                    <div class="tt-icon"><i class="fa fa-users"/></div>
+                                    <h4>Our Team</h4>
+                                    <p>An experienced team of certified professionals across infrastructure, software and security.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <t t-call="website_truetech.tt_cta"/>
+            </div>
+        </t>
+    </template>
+
+    <record id="page_about" model="website.page">
+        <field name="url">/about</field>
+        <field name="is_published">True</field>
+        <field name="view_id" ref="page_about_view"/>
+        <field name="track">True</field>
+    </record>
+
+    <!-- =========================== SERVICES ========================== -->
+    <template id="page_services_view" name="Services">
+        <t t-call="website.layout">
+            <div id="wrap" class="tt-page">
+                <t t-call="website_truetech.tt_page_banner">
+                    <t t-set="title" t-value="'Our Services'"/>
+                    <t t-set="subtitle" t-value="'Software development, IT infrastructure, security and managed services.'"/>
+                </t>
+
+                <section id="it-support" class="tt-section">
+                    <div class="container tt-detail">
+                        <div class="tt-icon"><i class="fa fa-headphones"/></div>
+                        <div>
+                            <h2>IT Technical Support</h2>
+                            <p>
+                                Our 24/7 helpdesk support team offers remote and telephone technical
+                                assistance for your IT issues, with on-site engineers available when
+                                a problem needs hands-on attention.
+                            </p>
+                            <ul class="tt-checklist">
+                                <li>24/7 remote and telephone helpdesk</li>
+                                <li>On-site hardware and software support</li>
+                                <li>Proactive monitoring and maintenance</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="managed-services" class="tt-section tt-alt">
+                    <div class="container tt-detail">
+                        <div class="tt-icon"><i class="fa fa-cogs"/></div>
+                        <div>
+                            <h2>IT Managed Services</h2>
+                            <p>
+                                We can take over the full-time operation of your IT needs, or augment
+                                your existing staff and become an extension of your organization. You
+                                get predictable costs and expert coverage without growing headcount.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="consultancy" class="tt-section">
+                    <div class="container tt-detail">
+                        <div class="tt-icon"><i class="fa fa-lightbulb-o"/></div>
+                        <div>
+                            <h2>IT Consultancy</h2>
+                            <p>
+                                Independent advice on IT strategy, architecture and procurement, so
+                                that every technology investment supports your business objectives.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="infrastructure" class="tt-section tt-alt">
+                    <div class="container tt-detail">
+                        <div class="tt-icon"><i class="fa fa-sitemap"/></div>
+                        <div>
+                            <h2>Turnkey IT Infrastructure</h2>
+                            <p>
+                                From design to deployment: connectivity solutions, structured data
+                                cabling, servers, storage, data centres and cloud services, delivered
+                                as a single turnkey project.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="software" class="tt-section">
+                    <div class="container tt-detail">
+                        <div class="tt-icon"><i class="fa fa-code"/></div>
+                        <div>
+                            <h2>Software Development &amp; ERP</h2>
+                            <p>
+                                Custom business applications and ERP implementation (including Odoo)
+                                built around the way your organization works.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="telecom" class="tt-section tt-alt">
+                    <div class="container tt-detail">
+                        <div class="tt-icon"><i class="fa fa-phone"/></div>
+                        <div>
+                            <h2>Telecom Solutions</h2>
+                            <p>
+                                Enterprise telephony and unified communication systems that keep your
+                                teams and customers connected.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <t t-call="website_truetech.tt_cta"/>
+            </div>
+        </t>
+    </template>
+
+    <record id="page_services" model="website.page">
+        <field name="url">/services</field>
+        <field name="is_published">True</field>
+        <field name="view_id" ref="page_services_view"/>
+        <field name="track">True</field>
+    </record>
+
+    <!-- =========================== SOLUTIONS ========================= -->
+    <template id="page_solutions_view" name="Solutions">
+        <t t-call="website.layout">
+            <div id="wrap" class="tt-page">
+                <t t-call="website_truetech.tt_page_banner">
+                    <t t-set="title" t-value="'Our Solutions'"/>
+                    <t t-set="subtitle" t-value="'Intelligent, industry-focused solutions that deliver measurable results.'"/>
+                </t>
+
+                <section id="iot" class="tt-section">
+                    <div class="container tt-detail">
+                        <div class="tt-icon"><i class="fa fa-wifi"/></div>
+                        <div>
+                            <h2>IoT &amp; RFID Solutions</h2>
+                            <p>
+                                Using the Impinj platform, we connect everyday items to your
+                                applications to improve efficiency, increase sales and delight
+                                customers.
+                            </p>
+                            <ul class="tt-checklist">
+                                <li>RFID asset and inventory tracking</li>
+                                <li>RFID library solutions: security and self-service check-in/check-out</li>
+                                <li>Real-time item visibility across your supply chain</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="retail" class="tt-section tt-alt">
+                    <div class="container tt-detail">
+                        <div class="tt-icon"><i class="fa fa-shopping-cart"/></div>
+                        <div>
+                            <h2>Retail Management Solutions</h2>
+                            <p>
+                                Retail, inventory management and loss prevention solutions that give
+                                you accurate stock, faster checkouts and less shrinkage.
+                            </p>
+                            <ul class="tt-checklist">
+                                <li>Inventory management</li>
+                                <li>Electronic article surveillance and loss prevention</li>
+                                <li>Point of sale integration</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="security" class="tt-section">
+                    <div class="container tt-detail">
+                        <div class="tt-icon"><i class="fa fa-shield"/></div>
+                        <div>
+                            <h2>Integrated Security Solutions</h2>
+                            <p>
+                                Protect your people, premises and information with integrated
+                                surveillance, access control and secure data destruction.
+                            </p>
+                            <ul class="tt-checklist">
+                                <li>CCTV surveillance and access control</li>
+                                <li>Data degaussing and shredding solutions</li>
+                                <li>Security system integration and maintenance</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <t t-call="website_truetech.tt_cta"/>
+            </div>
+        </t>
+    </template>
+
+    <record id="page_solutions" model="website.page">
+        <field name="url">/solutions</field>
+        <field name="is_published">True</field>
+        <field name="view_id" ref="page_solutions_view"/>
+        <field name="track">True</field>
+    </record>
+
+    <!-- ============================ CONTACT ========================== -->
+    <template id="page_contact_view" name="Contact True Tech Solutions">
+        <t t-call="website.layout">
+            <div id="wrap" class="tt-page">
+                <t t-call="website_truetech.tt_page_banner">
+                    <t t-set="title" t-value="'Contact Us'"/>
+                    <t t-set="subtitle" t-value="'We would love to hear about your project.'"/>
+                </t>
+                <section class="tt-section">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6 col-lg-3 mb-4">
+                                <div class="tt-card h-100">
+                                    <div class="tt-icon"><i class="fa fa-map-marker"/></div>
+                                    <h4>Head Office</h4>
+                                    <p>Office No. 8, 2nd Floor, Ahmed Centre,<br/>I-8 Markaz, Islamabad, Pakistan</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-3 mb-4">
+                                <div class="tt-card h-100">
+                                    <div class="tt-icon"><i class="fa fa-building"/></div>
+                                    <h4>Branch Office</h4>
+                                    <p>255, 2nd Floor, Lexus Mall,<br/>Gulberg Green Block-B, Islamabad, Pakistan</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-3 mb-4">
+                                <div class="tt-card h-100">
+                                    <div class="tt-icon"><i class="fa fa-phone"/></div>
+                                    <h4>Call Us</h4>
+                                    <p>
+                                        <a href="tel:+92518747430">+92 51 8747430</a><br/>
+                                        <a href="tel:+92518738278">+92 51 8738278</a>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-3 mb-4">
+                                <div class="tt-card h-100">
+                                    <div class="tt-icon"><i class="fa fa-envelope"/></div>
+                                    <h4>Email &amp; Hours</h4>
+                                    <p>
+                                        <a href="mailto:info@truetech-sol.com">info@truetech-sol.com</a><br/>
+                                        Mon – Fri: 9AM – 6PM
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-center mt-3">
+                            <a href="/contactus" class="btn btn-primary btn-lg">Send us a message</a>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </t>
+    </template>
+
+    <record id="page_contact" model="website.page">
+        <field name="url">/contact</field>
+        <field name="is_published">True</field>
+        <field name="view_id" ref="page_contact_view"/>
+        <field name="track">True</field>
+    </record>
+</odoo>

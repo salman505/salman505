@@ -1,0 +1,193 @@
+// True Tech Solutions brand styling.
+// Adjust these two colours to match the official logo if needed.
+$tt-primary: #0b4f9c;
+$tt-dark: #0a1f3c;
+$tt-light: #f4f7fb;
+
+#wrapwrap .tt-page a:not(.btn) {
+    color: $tt-primary;
+}
+
+.tt-page .btn-primary {
+    background-color: $tt-primary;
+    border-color: $tt-primary;
+}
+
+.tt-page {
+    .tt-hero {
+        background: linear-gradient(135deg, $tt-dark 0%, $tt-primary 100%);
+        color: #fff;
+        padding: 110px 0 90px;
+
+        h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            margin: 16px 0;
+        }
+        .lead {
+            opacity: .9;
+            margin-bottom: 28px;
+        }
+    }
+    .tt-hero-icon {
+        font-size: 14rem;
+        opacity: .15;
+    }
+    .tt-badge {
+        display: inline-block;
+        padding: 6px 14px;
+        border: 1px solid rgba(255, 255, 255, .4);
+        border-radius: 20px;
+        font-size: .85rem;
+        letter-spacing: .05em;
+    }
+
+    .tt-stats {
+        background: #fff;
+        box-shadow: 0 6px 24px rgba(10, 31, 60, .08);
+        padding: 32px 0;
+
+        strong {
+            display: block;
+            font-size: 2rem;
+            color: $tt-primary;
+        }
+        span {
+            color: #5b6b80;
+            font-size: .9rem;
+        }
+        .col-6 {
+            margin: 8px 0;
+        }
+    }
+
+    .tt-banner {
+        background: linear-gradient(135deg, $tt-dark 0%, $tt-primary 100%);
+        color: #fff;
+        padding: 80px 0 60px;
+
+        h1 {
+            font-weight: 700;
+        }
+    }
+
+    .tt-section {
+        padding: 80px 0;
+
+        &.tt-alt {
+            background: $tt-light;
+        }
+        h2 {
+            color: $tt-dark;
+            font-weight: 700;
+        }
+    }
+    .tt-eyebrow {
+        color: $tt-primary;
+        text-transform: uppercase;
+        letter-spacing: .12em;
+        font-weight: 700;
+    }
+
+    .tt-card {
+        background: #fff;
+        border-radius: 10px;
+        padding: 32px 28px;
+        box-shadow: 0 4px 18px rgba(10, 31, 60, .07);
+        transition: transform .2s, box-shadow .2s;
+
+        &:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 28px rgba(10, 31, 60, .14);
+        }
+        h4 {
+            color: $tt-dark;
+            font-weight: 600;
+        }
+    }
+    .tt-icon {
+        width: 60px;
+        height: 60px;
+        flex: 0 0 60px;
+        border-radius: 12px;
+        background: rgba($tt-primary, .1);
+        color: $tt-primary;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.6rem;
+        margin-bottom: 18px;
+    }
+    .text-center .tt-icon {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .tt-more {
+        color: $tt-primary;
+        font-weight: 600;
+        text-decoration: none;
+    }
+
+    .tt-detail {
+        display: flex;
+        gap: 28px;
+        align-items: flex-start;
+
+        @media (max-width: 575.98px) {
+            flex-direction: column;
+        }
+    }
+
+    .tt-checklist {
+        list-style: none;
+        padding-left: 0;
+
+        li {
+            position: relative;
+            padding-left: 30px;
+            margin-bottom: 10px;
+
+            &::before {
+                content: "\f00c"; // FontAwesome check
+                font-family: FontAwesome;
+                position: absolute;
+                left: 0;
+                color: $tt-primary;
+            }
+        }
+    }
+
+    .tt-cta {
+        background: $tt-primary;
+        color: #fff;
+        padding: 56px 0;
+
+        h2 {
+            color: #fff;
+            font-weight: 700;
+        }
+    }
+}
+
+.tt-footer {
+    background: $tt-dark;
+    color: rgba(255, 255, 255, .75);
+    padding: 64px 0 24px;
+
+    h5 {
+        color: #fff;
+        font-weight: 600;
+        margin-bottom: 16px;
+    }
+    li {
+        margin-bottom: 8px;
+    }
+    #wrapwrap & a {
+        color: rgba(255, 255, 255, .75);
+        text-decoration: none;
+
+        &:hover {
+            color: #fff;
+        }
+    }
+}
